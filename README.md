@@ -2,7 +2,6 @@
 
 > Binary classification pipeline predicting customer ad conversion from behavioral and contextual signals, with SHAP-based model interpretation and actionable campaign recommendations.
 
----
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -14,7 +13,6 @@
 - [Model Interpretation](#model-interpretation)
 - [Business Recommendations](#business-recommendations)
 
----
 
 ## Project Overview
 
@@ -28,7 +26,6 @@ Two complementary models were used:
 
 **Final model: Regularized Logistic Regression — Test Recall: 0.98**
 
----
 
 ## Dataset
 
@@ -41,7 +38,6 @@ Two complementary models were used:
 
 > The high baseline conversion rate means accuracy alone is misleading — a model predicting all 1s would score ~80% accuracy but provide no useful signal.
 
----
 
 ## Feature Landscape
 
@@ -64,7 +60,6 @@ Timing and channel of ad exposure:
 - `Weekday`
 - `Social_Network`
 
----
 
 ## Exploratory Analysis
 
@@ -95,7 +90,6 @@ Timing and channel of ad exposure:
 - `Region` excluded from modeling due to lack of predictive signal
 - Correlation analysis confirms weak feature-feature dependencies — no multicollinearity concerns
 
----
 
 ## Modeling Strategy
 
@@ -118,7 +112,6 @@ Timing and channel of ad exposure:
 
 Both models were compared on feature importance rankings — dominant features overlap, increasing confidence in findings.
 
----
 
 ## Results
 
@@ -147,7 +140,6 @@ Both models were compared on feature importance rankings — dominant features o
 
 > Interpretation example: A one standard deviation increase in `Daytime` is associated with ~128% higher odds of conversion, holding all other variables constant. `Carrier_Free` users have ~78% lower conversion odds compared to the reference carrier.
 
----
 
 ## Model Interpretation
 
@@ -189,7 +181,6 @@ A clear threshold effect appears at `Daytime ≈ 0.4` (around noon). Above this 
 
 > **Core insight:** Conversion behavior is context-dependent. Engagement and timing signals do not affect all users uniformly — their impact is modulated by carrier status. One-size-fits-all campaigns are suboptimal.
 
----
 
 ## Business Recommendations
 
