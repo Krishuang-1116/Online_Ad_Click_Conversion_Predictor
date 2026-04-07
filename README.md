@@ -170,12 +170,12 @@ The summary plot shows the direction and magnitude of each feature's contributio
 - `Daytime` and `Time_on_Previous_Website` show positive effects but with heterogeneity across users — interaction effects investigated below
 
 #### SHAP Dependence Plot — Daytime × Carrier_Free
-![Daytime x Carrier_Free](images/daytime_carrier_free.png)
+![Daytime x Carrier_Free](images/daytime*carrier_free.png)
 
 A clear threshold effect appears at `Daytime ≈ 0.4` (around noon). Above this threshold, SHAP values shift sharply positive. Notably, Free carrier users (pink/red) show higher SHAP values than non-Free users (blue) above the threshold — meaning **daytime exposure has a stronger predictive impact among Free carrier users**, despite their overall lower conversion rate.
 
 #### SHAP Dependence Plot — Time on Previous Website × Carrier_Free
-![Time on Website x Carrier_Free](images/time_website_carrier_free.png)
+![Time on Website x Carrier_Free](images/time_website*carrier_free.png)
 
 `Time_on_Previous_Website` shows a smooth monotonic positive relationship with conversion likelihood. Free carrier users (pink/red) consistently sit above non-Free users (blue) at equivalent engagement levels — confirming that **engagement signals interact with carrier status** rather than operating independently.
 
